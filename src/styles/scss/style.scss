@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app {
+    font-size: 100%;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+}
+
+
+@import "_variables";
+@import "_mixins";
+@import "_navbar";
+
+
+
+
+

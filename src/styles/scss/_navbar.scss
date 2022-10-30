@@ -1,0 +1,167 @@
+.navbar {
+    width: 100%;
+    background-color: white;
+
+    .navbar-center {
+        width: 95%;
+        margin: 0 auto;
+        @include flex;
+    }
+
+    .icon {
+        font-size: 20px;
+        cursor: pointer;
+    }
+    
+    .left {
+        @include flex;
+        .icon {
+            margin-right: 20px;
+        }
+        img {
+            width: 100px;
+            object-fit: contain;
+            cursor: pointer;
+        }
+    }
+
+    .center {
+        width: 50%;
+        height: 40px;
+        @include flex;
+        flex-shrink: 1;
+
+        .search {
+            width: 95%;
+            @include flex;
+        }
+
+        .form {
+            @include flex;
+            width: 100%;
+            height: 40px;
+        }
+        
+        .search-box-container {
+            @include flex;
+            width: 88%;
+            max-height: 100%;
+            padding-left: 15px;
+            border: 1px solid transparent;
+            border-radius: 40px 0 0 40px;
+        }
+
+        .icon-span {
+            visibility: hidden;
+        }
+
+        .search-box {
+            width: 90%;
+            max-height: 100%;
+            margin: 0;
+            // margin-left: 15px;
+            padding: 8px 5px 8px 25px;
+            border: 1px solid $grey;
+            border-radius: 40px 0 0 40px;
+            border-right: none;
+        }
+
+        .input {
+            width: 100%;
+            height: 20px;
+            padding: 0;
+            font-size: 16px;
+            outline: none;
+            border: none;
+            font-style: italic;
+        }
+
+        .search-btn {
+            width: 12%;
+            height: 100%;
+            padding: 7px;
+            background-color: $light;
+            border: 1px solid $grey;
+            border-radius: 0 40px 40px 0;
+            cursor: pointer;
+        }
+
+        .srch-btn {
+            display: none;
+        }
+
+        .mic {
+            border: none;
+            width: 40px;
+            min-width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-left: 15px;
+            padding: 0;
+            background-color: $light;
+        }
+
+        // onFocus
+
+        .has-focus {
+            .search-box-container {
+                border: 1px solid $call;
+            }
+            .icon-span {
+                visibility: visible;
+            }
+            .search-box {
+                border: none;
+            }
+        }
+    }
+
+    .right {
+        height: 40px;
+        @include flex;
+        flex-shrink: 0;
+
+        .menu-icon {
+            padding: 6px 10px;
+            margin-right: 4px;
+        }
+
+        .sign-in {
+            @include flex;
+            padding: 5px 14px;
+            border: 1px solid $grey;
+            border-radius: 18px;
+            color: $call;
+            cursor: pointer;
+
+            p {
+                margin: 0;
+                margin-left: 5px;
+                font-style: italic;
+            }
+
+            &:hover {
+                border-color: transparent;
+                background-color: lighten($call, 50%);
+            }
+        }
+    }
+
+    @include sm-screen {
+        .center {
+            justify-content: end;
+        }
+        
+        .center .form {
+            display: none;
+        }
+
+        .center .srch-btn {
+            display: block;
+        }
+    }
+
+}
+
+
+

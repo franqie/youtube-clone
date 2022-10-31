@@ -1,11 +1,11 @@
 @mixin flex {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 @mixin sm-screen {
-    @media (max-width: 657px) {
-        @content;
-    }
+  @media (max-width: 657px) {
+    @content;
+  }
 }

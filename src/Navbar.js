@@ -1,11 +1,21 @@
 import React, { useState } from 'react';
 import {
-  FaBars,
-  FaEllipsisV,
-  FaMicrophone,
-  FaRegUserCircle,
-  FaSearch,
-} from 'react-icons/fa';
+  FiVideo,
+} from 'react-icons/fi';
+
+import {
+  TfiSearch,
+} from 'react-icons/tfi';
+
+import {
+  HiMicrophone,
+  HiOutlineBars3,
+  HiOutlineUser,
+} from 'react-icons/hi2';
+
+import {
+  BsBell,
+} from 'react-icons/bs';
 
 const Navbar = () => {
   const [focused, setFocused] = useState(false);
@@ -22,8 +32,11 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-center">
         <div className="left">
-          <FaBars className="icon" />
-          <img src="https://www.freeiconspng.com/thumbs/youtube-logo-png/youtube-logo-png-transparent-image-5.png" alt="logo" className="logo" />
+          <span className="bars effect"><HiOutlineBars3 className="icon hi-bars" /></span>
+          <div className="logo">
+            <img src="https://www.freeiconspng.com/thumbs/youtube-logo-png/youtube-logo-png-transparent-image-5.png" alt="logo" className="logo-img" />
+            <span className="logo-text">NG</span>
+          </div>
         </div>
 
         <div className="center">
@@ -31,26 +44,33 @@ const Navbar = () => {
             <form className={`${focused ? 'form has-focus' : 'form'}`}>
               <div className="search-box-container">
                 <span className="icon-span">
-                  <FaSearch className="icon" />
+                  <TfiSearch className="icon fa-search" />
                 </span>
                 <div className="search-box">
                   <input type="text" className="input" placeholder="Search" onFocus={handleFocus} onBlur={handleBlur} />
                 </div>
               </div>
               <button type="submit" className="search-btn">
-                <FaSearch className="icon" />
+                <TfiSearch className="icon tfi-search" />
               </button>
             </form>
           </div>
-          <button aria-label="search" type="button" className="mic srch-btn"><FaSearch className="icon" /></button>
-          <button aria-label="search" type="button" className="mic"><FaMicrophone className="icon" /></button>
+          <button aria-label="search" type="button" className="srch-btn effect"><TfiSearch className="icon tfi-search" /></button>
+          <button aria-label="search" type="button" className="mic effect"><HiMicrophone className="icon" /></button>
         </div>
 
         <div className="right">
-          <span className="menu-icon"><FaEllipsisV className="icon" /></span>
-          <div className="sign-in">
-            <FaRegUserCircle className="icon" />
-            <p>Sign in</p>
+          <div className="right-inner">
+            <span className="effect">
+              <FiVideo className="icon fi-video" />
+              <span className="plus">+</span>
+            </span>
+            <span className="effect bell">
+              <BsBell className="icon bs-bell" />
+            </span>
+            <span className="login">
+              <HiOutlineUser className="icon hi-outline-user" />
+            </span>
           </div>
         </div>
       </div>

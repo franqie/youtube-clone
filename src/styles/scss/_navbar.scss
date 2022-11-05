@@ -7,6 +7,7 @@
     width: 97%;
     height: 56px;
     margin: 0 auto;
+
     @include flex;
   }
 
@@ -15,15 +16,15 @@
     cursor: pointer;
   }
 
-  
   .left {
     @include flex;
+
     flex-shrink: 1;
 
     .bars {
       margin-right: 10px;
     }
-    
+
     .icon {
       font-size: 25px;
     }
@@ -50,22 +51,27 @@
     width: 55%;
     height: 40px;
     margin-right: 15px;
+
     @include flex;
+
     flex-shrink: 1;
 
     .search {
       width: 95%;
+
       @include flex;
     }
 
     .form {
       @include flex;
+
       width: 100%;
       height: 40px;
     }
 
     .search-box-container {
       @include flex;
+
       width: 88%;
       max-height: 100%;
       padding-left: 15px;
@@ -125,7 +131,6 @@
       background-color: $light;
     }
 
-
     // onFocus
 
     .has-focus {
@@ -143,17 +148,19 @@
     }
   }
 
-
   .right,
   .right-inner {
     min-width: 140px;
     height: 40px;
+
     @include flex;
+
     flex-shrink: 0;
   }
 
   .login {
     @include icon-style(35px);
+
     background-color: $orange;
   }
 
@@ -167,29 +174,28 @@
   }
 
   .effect {
-      @include icon-style;
-      position: relative;
+    @include icon-style;
 
-      .plus {
-        position: absolute;
-        left: 29%;
-        transform: translateY(-1px);
-        font-size: 14px;
-        font-weight: 900;
-      }
+    position: relative;
 
-      &:hover {
-        background-color: $hover;
-      }
+    .plus {
+      position: absolute;
+      left: 29%;
+      transform: translateY(-1px);
+      font-size: 14px;
+      font-weight: 900;
     }
 
+    &:hover {
+      background-color: $hover;
+    }
+  }
 
-
-    // media queries
+  // media queries
 
   @include sm-screen {
     .navbar-center {
-    width: 92%;
+      width: 92%;
     }
 
     .center {
@@ -211,13 +217,13 @@
     }
   }
 
-
   @include xsm-screen {
     .center {
       margin-right: 5px;
     }
 
-    .mic, .bell {
+    .mic,
+    .bell {
       display: none;
     }
 

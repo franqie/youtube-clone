@@ -9,7 +9,9 @@
   min-width: $val;
   height: $val;
   border-radius: 50%;
+
   @include flex;
+
   justify-content: center;
   cursor: pointer;
   border: none;

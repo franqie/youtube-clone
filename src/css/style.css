@@ -214,7 +214,8 @@ body {
   .navbar .center {
     margin-right: 5px;
   }
-  .navbar .mic, .navbar .bell {
+  .navbar .mic,
+.navbar .bell {
     display: none;
   }
   .navbar .right,

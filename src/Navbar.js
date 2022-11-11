@@ -44,7 +44,7 @@ const Navbar = () => {
             <form className={`${focused ? 'form has-focus' : 'form'}`}>
               <div className="search-box-container">
                 <span className="icon-span">
-                  <TfiSearch className="icon fa-search" />
+                  <TfiSearch className="icon tfi-search" />
                 </span>
                 <div className="search-box">
                   <input type="text" className="input" placeholder="Search" onFocus={handleFocus} onBlur={handleBlur} />

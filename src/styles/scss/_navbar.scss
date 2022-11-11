@@ -19,19 +19,25 @@
   .left {
     @include flex;
 
+    height: 100%;
     flex-shrink: 1;
 
     .bars {
       margin-right: 10px;
+
+      @include flex;
+
+      justify-content: center;
     }
 
     .icon {
-      font-size: 25px;
+      font-size: 24px;
     }
 
     .logo {
-      position: relative;
       cursor: pointer;
+
+      @include flex;
     }
 
     img {
@@ -40,16 +46,14 @@
     }
 
     .logo-text {
-      position: absolute;
-      top: 15px;
-      transform: translateX(-2px);
+      transform: translate(-2px, -9px);
       font-size: 9px;
       color: #606060;
     }
   }
 
   .center {
-    width: 55%;
+    width: 52%;
     height: 40px;
     margin-right: 15px;
 
@@ -81,16 +85,21 @@
     }
 
     .icon-span {
+      padding: 10px 0 5px 5px;
       visibility: hidden;
     }
 
+    span .tfi-search {
+      font-size: 15px;
+    }
+
     .search-box {
-      width: 90%;
+      width: 95%;
       height: 100%;
       max-height: 100%;
       margin: 0;
       // margin-left: 15px;
-      padding: 9px 5px 9px 25px;
+      padding: 9px 5px 9px 15px;
       border: 1px solid $grey;
       border-radius: 40px 0 0 40px;
       border-right: none;
@@ -101,7 +110,6 @@
       height: 20px;
       padding: 0;
       font-size: 16px;
-      color: $grey;
       outline: none;
       border: none;
     }
@@ -110,7 +118,7 @@
       width: 10%;
       min-width: 67px;
       height: 100%;
-      padding: 7px;
+      padding: 10px 7px 7px 7px;
       background-color: $light;
       border: 1px solid $grey;
       border-radius: 0 40px 40px 0;
@@ -119,6 +127,10 @@
       &:hover {
         background-color: $hover;
       }
+    }
+
+    .search-btn .tfi-search {
+      font-size: 21px;
     }
 
     .srch-btn {
@@ -147,6 +159,10 @@
         border: none;
       }
     }
+  }
+
+  .right {
+    padding: 0 10px;
   }
 
   .right,
@@ -181,7 +197,7 @@
 
     .plus {
       position: absolute;
-      left: 29%;
+      left: 30%;
       transform: translateY(-1px);
       font-size: 14px;
       font-weight: 900;

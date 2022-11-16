@@ -16,8 +16,10 @@ import {
 import {
   BsBell,
 } from 'react-icons/bs';
+import { useGlobalContext } from './context';
 
 const Navbar = () => {
+  const { showTray, setShowTray } = useGlobalContext();
   const [focused, setFocused] = useState(false);
 
   const handleFocus = () => {
@@ -32,7 +34,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-center">
         <div className="left">
-          <span className="bars effect"><HiOutlineBars3 className="icon hi-bars" /></span>
+          <button type="button" aria-label="menu button" onClick={() => setShowTray(!showTray)} className="bars effect"><HiOutlineBars3 className="icon hi-bars" /></button>
           <div className="logo">
             <img src="https://www.freeiconspng.com/thumbs/youtube-logo-png/youtube-logo-png-transparent-image-5.png" alt="logo" className="logo-img" />
             <span className="logo-text">NG</span>

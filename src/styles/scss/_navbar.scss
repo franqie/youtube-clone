@@ -1,11 +1,11 @@
 .navbar {
   width: 100%;
-  height: 56px;
+  height: $nav-height;
   background-color: white;
 
   .navbar-center {
     width: 97%;
-    height: 56px;
+    height: $nav-height;
     margin: 0 auto;
 
     @include flex;
@@ -23,6 +23,7 @@
     flex-shrink: 1;
 
     .bars {
+      background-color: transparent;
       margin-right: 10px;
 
       @include flex;

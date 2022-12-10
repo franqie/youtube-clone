@@ -1,13 +1,13 @@
 import { useGlobalContext } from '../context';
 import Mainpage from './Mainpage';
-import Appdrawer from './Appdrawer';
-import Minidrawer from './Minidrawer';
+import Sidebar from './Sidebar';
+import MiniSidebar from './MiniSidebar';
 
 const Content = () => {
   const { showTray } = useGlobalContext();
   return (
     <div className="content">
-      {showTray ? <Appdrawer /> : <Minidrawer />}
+      {showTray ? <Sidebar /> : <MiniSidebar />}
       <Mainpage />
     </div>
   );

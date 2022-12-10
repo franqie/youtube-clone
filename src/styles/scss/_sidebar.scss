@@ -1,9 +1,10 @@
 .appdrawer {
-    background-color: transparent;
+    background-color: #fff;
     width: $drawer-width;
     min-width: $drawer-width;
-    max-height: 100vh;
-    overflow-y: scroll;
+    max-height: 92vh;
+    overflow-y: auto;
+    @include scrollbar-style;
     
     .appdrawer-wrapper {
         padding: 5px 15px;
@@ -15,6 +16,8 @@
 
         .title {
             padding-left: 10px;
+            margin-bottom: 10px;
+            cursor: pointer;
         }
 
         .red {
@@ -31,6 +34,12 @@
         @include flex;
         justify-content: flex-start;
         padding: 10px;
+        border-radius: 8px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $lighter-bg;
+        }
     }
     
     svg {

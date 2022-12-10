@@ -1,3 +1,16 @@
+@mixin scrollbar-style {
+  &::-webkit-scrollbar {
+    width: 0.6vw;
+  }
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+  }
+}
+
 @mixin flex {
   display: flex;
   align-items: center;

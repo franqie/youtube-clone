@@ -1,0 +1,63 @@
+.videocard {
+    width: 296px;
+    min-width: 255px;
+    height: 283px;
+    min-height: 236px;
+    margin: 10px 8px 20px;
+    cursor: pointer;
+
+    .video__img {
+        width: 100%;
+        object-fit: contain;
+        border-radius: 12px;
+    }
+
+    .video__desc {
+        display: flex;
+        align-items: flex-start;
+
+        .channel__avatar {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            margin: 12px 12px 0 0;
+        }
+
+        .channel {
+            flex: 1;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 12px;
+
+            .desc h4, p {
+                margin: 0;
+                padding: 0;
+                color: $text-color;
+            }
+
+            .desc h4 {
+                line-height: 20px;
+                font-size: 14px;
+                margin-bottom: 8px;
+            }
+
+            .desc p {
+                line-height: 18px;
+                font-size: 12px;
+                font-weight: 400;
+                color: #606060;
+            }
+
+            .channel__icon {
+                width: 24px;
+                object-fit: contain;
+                align-self: flex-start;
+                visibility: hidden;
+            }
+        }
+    }
+    
+    &:hover .channel__icon {
+        visibility: visible !important;
+    }
+}

@@ -1,7 +1,4 @@
 import React, { useState } from 'react';
-import {
-  FiVideo,
-} from 'react-icons/fi';
 
 import {
   TfiSearch,
@@ -16,11 +13,15 @@ import {
 import {
   BsBell,
 } from 'react-icons/bs';
+import { Link, useLocation } from 'react-router-dom';
 import { useGlobalContext } from './context';
+import useWindowSize from './utils/useWindowSize';
 
 const Navbar = () => {
-  const { showTray, setShowTray } = useGlobalContext();
+  const { showTray, setShowTray, setShowsidemenu } = useGlobalContext();
+  const windowWidth = useWindowSize();
   const [focused, setFocused] = useState(false);
+  const { pathname } = useLocation();
 
   const handleFocus = () => {
     setFocused(true);
@@ -30,15 +31,23 @@ const Navbar = () => {
     setFocused(false);
   };
 
+  const handleClick = () => {
+    if ((windowWidth >= 1300) && (pathname === '/')) {
+      setShowTray(!showTray);
+    } else {
+      setShowsidemenu(true);
+    }
+  };
+
   return (
     <nav className="navbar">
       <div className="navbar-center">
         <div className="left">
-          <button type="button" aria-label="menu button" onClick={() => setShowTray(!showTray)} className="bars effect"><HiOutlineBars3 className="icon hi-bars" /></button>
-          <div className="logo">
+          <button type="button" aria-label="menu button" onClick={handleClick} className="bars effect"><HiOutlineBars3 className="icon hi-bars" /></button>
+          <Link to="/" className="logo">
             <img src="https://www.freeiconspng.com/thumbs/youtube-logo-png/youtube-logo-png-transparent-image-5.png" alt="logo" className="logo-img" />
             <span className="logo-text">NG</span>
-          </div>
+          </Link>
         </div>
 
         <div className="center">
@@ -64,8 +73,7 @@ const Navbar = () => {
         <div className="right">
           <div className="right-inner">
             <span className="effect">
-              <FiVideo className="icon fi-video" />
-              <span className="plus">+</span>
+              <span className="material-symbols-outlined">video_call</span>
             </span>
             <span className="effect bell">
               <BsBell className="icon bs-bell" />

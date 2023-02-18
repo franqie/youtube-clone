@@ -1,6 +1,5 @@
 import React, { useRef, useState } from 'react';
 import { TfiAngleLeft, TfiAngleRight } from 'react-icons/tfi';
-import Videospage from './Videopage';
 
 const Mainpage = () => {
   const scroll = useRef(null);
@@ -35,7 +34,7 @@ const Mainpage = () => {
   };
 
   return (
-    <div className="main-page">
+    <div className="slidingheader">
       <div className="chip-bar-wrapper">
         <div className={`button-container left ${hideAngleLeft ? 'hide' : null}`}>
           <div className="button-box">
@@ -77,10 +76,6 @@ const Mainpage = () => {
             <button onClick={(e) => handleClick(e)} type="button" aria-label="scroll button" className="bar-button angle-right"><TfiAngleRight /></button>
           </div>
         </div>
-
-      </div>
-      <div className="videos">
-        <Videospage />
       </div>
     </div>
   );

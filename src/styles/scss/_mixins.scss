@@ -1,6 +1,6 @@
 @mixin scrollbar-style {
   &::-webkit-scrollbar {
-    width: 0.6vw;
+    width: 0.65vw;
   }
   &::-webkit-scrollbar-track {
     background: transparent;
@@ -30,14 +30,21 @@
   border: none;
 }
 
+
+@mixin xsm-screen {
+  @media (max-width: 429px) {
+    @content;
+  }
+}
+
 @mixin sm-screen {
   @media (max-width: 657px) {
     @content;
   }
 }
 
-@mixin xsm-screen {
-  @media (max-width: 429px) {
+@mixin lg-screen {
+  @media (max-width: 1012px) {
     @content;
   }
 }

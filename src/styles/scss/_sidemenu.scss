@@ -1,0 +1,73 @@
+.sidemenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    z-index: 50;
+    transition: all ease 0.2s;
+
+    .container {
+        width: $drawer-width;
+        padding-right: 4px;
+        background: #fff;
+        transition: all ease 0.2s;
+    }
+
+    .header {
+        @include flex;
+        justify-content: flex-start;
+        background-color: #fff;
+    
+        .bars {
+            position: relative;
+            background-color: transparent;
+            margin-right: 10px;    
+            margin-left: 19px;    
+            @include icon-style;
+            @include flex;
+    
+            justify-content: center;
+          
+          &:hover {
+            background-color: $hover;
+          }
+        }
+    
+        .icon {
+          font-size: 24px;
+        }
+    
+        .logo {
+          cursor: pointer;
+          text-decoration: none;
+    
+          @include flex;
+        }
+    
+        img {
+          width: 100px;
+          object-fit: contain;
+        }
+    
+        .logo-text {
+          transform: translate(-2px, -9px);
+          font-size: 9px;
+          color: #606060;
+        }
+      }
+}
+
+.sidemenu.show {
+    visibility: visible;
+    opacity: 1;
+
+    .container {
+        transform: translateX(0);
+    }
+}

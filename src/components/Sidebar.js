@@ -22,7 +22,7 @@ const Sidebar = () => (
   <div className="appdrawer">
     <div className="appdrawer-wrapper">
       <div className="appdrawer-tray">
-        <SidebarIcon icon={<MdHomeFilled />} title="Home" />
+        <SidebarIcon url="/" icon={<MdHomeFilled />} title="Home" />
         <SidebarIcon icon={<MdOutlineLocalPlay />} title="Shorts" />
         <SidebarIcon icon={<BsCollectionPlay />} title="Subscriptions" />
       </div>

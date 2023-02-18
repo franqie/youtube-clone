@@ -1,0 +1,42 @@
+.popoutcard {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: auto;
+    visibility: hidden;
+    // background-color: #7fffd4;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 3px 6px 0 rgb(0 0 0 / 20%);
+    transition: all 0.2s ease 1s;
+    z-index: 10;
+
+
+    .btn__group {
+        margin: 10px 0;
+    }
+
+    button {
+        @include flex;
+        justify-content: center;
+        width: 95%;
+        height: 30px;
+        padding: 10px;
+        margin: 5px auto;
+        border: none;
+        border-radius: 12px;
+        background-color: $lighter-bg;
+    }
+
+    img {
+        width: 24px;
+        object-fit: contain;
+        margin-right: 4px;
+    }
+}
+
+.videocard:hover .popoutcard{
+    visibility: visible;
+    transform: scale(1.1);
+}
+

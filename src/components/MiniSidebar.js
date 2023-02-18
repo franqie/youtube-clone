@@ -8,7 +8,11 @@ const MiniSidebar = () => (
   <div className="wrapper">
     <div className="mini-drawer">
       <div className="mini-drawer-wrapper">
-        <SidebarIcon icon={<MdHomeFilled />} title="Home" />
+        <SidebarIcon url="/" icon={<MdHomeFilled />} title="Home" />
+        {/* <SidebarIcon
+          url="/"
+          icon={<span className="material-symbols-outlined">home</span>}
+          title="Home" /> */}
         <SidebarIcon icon={<MdOutlineLocalPlay />} title="Shorts" />
         <SidebarIcon icon={<BsCollectionPlay />} title="Subscriptions" />
         <SidebarIcon icon={<AiOutlinePlaySquare />} title="Library" />

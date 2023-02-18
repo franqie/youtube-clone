@@ -1,10 +1,10 @@
 .videocard {
-    width: 296px;
-    min-width: 255px;
-    height: 283px;
-    min-height: 236px;
-    margin: 10px 8px 20px;
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
     cursor: pointer;
+    border-radius: 12px;
+    // z-index: 5;
 
     .video__img {
         width: 100%;
@@ -20,7 +20,7 @@
             width: 36px;
             height: 36px;
             border-radius: 50%;
-            margin: 12px 12px 0 0;
+            margin: 12px 12px 0 5px;
         }
 
         .channel {
@@ -48,12 +48,21 @@
                 color: #606060;
             }
 
+            .channel__btn {
+                background-color: transparent;
+                transform: translate(10px,-7px);
+                @include icon-style;
+            }
+
             .channel__icon {
-                width: 24px;
-                object-fit: contain;
-                align-self: flex-start;
+                pointer-events: none;
                 visibility: hidden;
             }
+        }
+
+        .channel__btn:active {
+            background-color: $lighter-bg;
+            border: 1px solid $light-bg;
         }
     }
     

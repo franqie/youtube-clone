@@ -1,11 +1,12 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
-const SidebarIcon = ({ icon, title }) => (
-  <div className="appdrawer-link">
+const SidebarIcon = ({ url, icon, title }) => (
+  <NavLink to={url} className="appdrawer-link">
     {icon}
     <span className="drawer-text">{title}</span>
-  </div>
+  </NavLink>
 );
 
 export default SidebarIcon;

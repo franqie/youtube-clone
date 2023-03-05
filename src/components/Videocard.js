@@ -1,8 +1,8 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import MenuVIcon from '../images/MenuVIcon';
 import { useGlobalContext } from '../context';
-import dots from '../images/svg-dots.png';
 import Popoutcard from './Popoutcard';
 
 const Videocard = ({
@@ -13,20 +13,38 @@ const Videocard = ({
   views,
   time,
 }) => {
-  const { openSubmenu, setShowsubmenu } = useGlobalContext();
+  // const [popout, setPopout] = useState(false);
+  const { handleClick, showSubmenu, setShowsubmenu } = useGlobalContext();
+  const navigate = useNavigate();
 
-  const handleClick = (e) => {
-    e.stopPropagation();
-    setShowsubmenu(false);
-    const coords = e.target.getBoundingClientRect();
-    const { left, bottom, top } = coords;
-    openSubmenu({ left, bottom, top });
-    setShowsubmenu(true);
+  // const handleMouseOver = () => {
+  //   setPopout(true);
+  //   // setTimeout(() => setPopout(true), 100);
+  // };
+  // const handleMouseLeave = () => {
+  //   setTimeout(() => setpopout(false), 10);
+  // };
+
+  const handlePress = () => {
+    if (showSubmenu) {
+      setShowsubmenu(false);
+    } else {
+      navigate('/watch');
+    }
   };
 
   return (
-    <Link to="/watch" className="videocard">
-      <img src={imgSrc} alt="" className="video__img" />
+    <div
+      onClick={handlePress}
+      onKeyDown={handlePress}
+      role="button"
+      tabIndex={0}
+      className="videocard"
+    >
+      <div className="img__container">
+        <img src={imgSrc} alt="" className="video__img" />
+        <span className="hover__text">Keep hovering to play</span>
+      </div>
       <div className="video__desc">
         <img src={avatar} alt="video" className="channel__avatar" />
         <div className="channel">
@@ -49,7 +67,7 @@ const Videocard = ({
             onClick={(e) => handleClick(e)}
             onKeyDown={(e) => handleClick(e)}
           >
-            <img src={dots} alt="" className="channel__icon" />
+            <MenuVIcon />
           </button>
         </div>
       </div>
@@ -60,8 +78,10 @@ const Videocard = ({
         channel={channel}
         views={views}
         time={time}
+        // popout={popout}
+        // setPopout={setPopout}
       />
-    </Link>
+    </div>
   );
 };
 

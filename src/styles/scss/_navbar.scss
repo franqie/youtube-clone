@@ -2,6 +2,9 @@
   width: 100%;
   height: $nav-height;
   background-color: white;
+  position: fixed;
+  top: 0;
+  z-index: 3;
 
   .material-symbols-outlined {
     font-variation-settings:
@@ -15,6 +18,7 @@
     width: 97%;
     height: $nav-height;
     margin: 0 auto;
+    margin-left: 15px;
 
     @include flex;
   }
@@ -60,6 +64,11 @@
       font-size: 9px;
       color: #606060;
     }
+    .clone {
+      transform: translate(-1px, -9px);
+      font-size: 9px;
+      color: #606060;
+    }
   }
 
   .center {
@@ -96,13 +105,13 @@
     }
 
     .icon-span {
-      padding: 10px 0 5px 5px;
+      padding: 5px 0 5px 5px;
       visibility: hidden;
     }
 
-    span .tfi-search {
-      font-size: 15px;
-    }
+    // span .tfi-search {
+    //   font-size: 15px;
+    // }
 
     .search-box {
       width: 95%;
@@ -129,7 +138,7 @@
       width: 10%;
       min-width: 67px;
       height: 100%;
-      padding: 10px 7px 7px 7px;
+      padding: 7px;
       background-color: $light;
       border: 1px solid $grey;
       border-radius: 0 40px 40px 0;
@@ -140,8 +149,8 @@
       }
     }
 
-    .search-btn .tfi-search {
-      font-size: 21px;
+    .search-btn svg {
+      margin: 0 auto;
     }
 
     .srch-btn {
@@ -215,7 +224,7 @@
 
   @include sm-screen {
     .navbar-center {
-      width: 92%;
+      width: 94.5%;
     }
 
     .center {

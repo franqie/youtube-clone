@@ -21,7 +21,6 @@ const FlexedVideoCard = ({
     const { left, bottom, top } = coords;
     openSubmenu({ left, bottom, top });
     setShowsubmenu(true);
-    console.log(e);
   };
 
   return (

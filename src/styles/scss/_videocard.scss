@@ -6,10 +6,31 @@
     border-radius: 12px;
     // z-index: 5;
 
+    .img__container {
+        position: relative;
+    }
+
     .video__img {
         width: 100%;
         object-fit: contain;
         border-radius: 12px;
+    }
+
+    .hover__text {
+        position: absolute;
+        bottom: 0.5rem;
+        right: 0.2rem;
+        background: #000;
+        color: #fff;
+        font-size: 0.75rem;
+        padding: 0.3rem 0.7rem;
+        border-radius: 0.15rem;
+        visibility: hidden;
+        transition: all ease 0.2s;
+    }
+
+    .video__img:hover ~ .hover__text {
+        visibility: visible;
     }
 
     .video__desc {

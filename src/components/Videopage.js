@@ -15,7 +15,7 @@ const Videopage = () => {
         channel="OTZ Media"
         views="5k views"
         time="1 month ago"
-        avatar="https://yt3.ggpht.com/ytc/AMLnZu81e6WCua1SV85eK5paCQhwgyEpIRV6aUfZ_eco=s68-c-k-c0x00ffffff-no-rj"
+        avatar="https://yt3.ggpht.com/j5AbQt634TGo_fCEmSVUWcompQRbrbYqrnoUqV84KLQ3l0ZCWt4oCSuvgzrcyQiMgWjIQjGprnc=s68-c-k-c0x00ffffff-no-rj"
       />
       <Videocard
         imgSrc="https://i.ytimg.com/vi/btHF84xXIDQ/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBbpRd0Fl4nAXt2nL2EUa4zLYtjUw"
@@ -31,7 +31,7 @@ const Videopage = () => {
         channel="Star Media"
         views="10k views"
         time="6 months ago"
-        avatar="https://yt3.ggpht.com/ytc/AMLnZu81e6WCua1SV85eK5paCQhwgyEpIRV6aUfZ_eco=s68-c-k-c0x00ffffff-no-rj"
+        avatar="https://yt3.ggpht.com/j5AbQt634TGo_fCEmSVUWcompQRbrbYqrnoUqV84KLQ3l0ZCWt4oCSuvgzrcyQiMgWjIQjGprnc=s68-c-k-c0x00ffffff-no-rj"
       />
       <Videocard
         imgSrc="https://i.ytimg.com/vi/phWxA89Dy94/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLBFRFEMRwCj9-LW-Z8tnuDvdLF00g"
@@ -39,7 +39,7 @@ const Videopage = () => {
         channel="Star Media"
         views="10k views"
         time="6 months ago"
-        avatar="https://yt3.ggpht.com/ytc/AMLnZu9zMTPmIaEiOs-B40F1uSXGQvYzWSIAyLFDh7O46w=s68-c-k-c0x00ffffff-no-rj"
+        avatar="https://yt3.ggpht.com/ytc/AL5GRJXi2jT3Xqz7k5eT73gYxh989BJV5AabJ0rcV5z1=s68-c-k-c0x00ffffff-no-rj"
       />
       <Videocard
         imgSrc="https://i.ytimg.com/vi/B_Nv8qw6aRQ/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBIfHa3S3bEUDcTsKr5FWoshsb_Sw"
@@ -63,7 +63,7 @@ const Videopage = () => {
         channel="OTZ Media"
         views="5k views"
         time="1 month ago"
-        avatar="https://yt3.ggpht.com/ytc/AMLnZu81e6WCua1SV85eK5paCQhwgyEpIRV6aUfZ_eco=s68-c-k-c0x00ffffff-no-rj"
+        avatar="https://yt3.ggpht.com/j5AbQt634TGo_fCEmSVUWcompQRbrbYqrnoUqV84KLQ3l0ZCWt4oCSuvgzrcyQiMgWjIQjGprnc=s68-c-k-c0x00ffffff-no-rj"
       />
       <Videocard
         imgSrc="https://i.ytimg.com/vi/2mDEfbBb48k/hq720.jpg?sqp=-oaymwE2COgCEMoBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhGIFYoZTAP&rs=AOn4CLBo4AsqtQ9UogUqofhhCNQhPjG89w"
@@ -71,7 +71,7 @@ const Videopage = () => {
         channel="Star Media"
         views="10k views"
         time="6 months ago"
-        avatar="https://yt3.ggpht.com/ytc/AMLnZu81e6WCua1SV85eK5paCQhwgyEpIRV6aUfZ_eco=s68-c-k-c0x00ffffff-no-rj"
+        avatar="https://yt3.ggpht.com/j5AbQt634TGo_fCEmSVUWcompQRbrbYqrnoUqV84KLQ3l0ZCWt4oCSuvgzrcyQiMgWjIQjGprnc=s68-c-k-c0x00ffffff-no-rj"
       />
       <Videocard
         imgSrc="https://i.ytimg.com/vi/phWxA89Dy94/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLBFRFEMRwCj9-LW-Z8tnuDvdLF00g"
@@ -79,7 +79,7 @@ const Videopage = () => {
         channel="Star Media"
         views="10k views"
         time="6 months ago"
-        avatar="https://yt3.ggpht.com/ytc/AMLnZu9zMTPmIaEiOs-B40F1uSXGQvYzWSIAyLFDh7O46w=s68-c-k-c0x00ffffff-no-rj"
+        avatar="https://yt3.ggpht.com/ytc/AL5GRJXi2jT3Xqz7k5eT73gYxh989BJV5AabJ0rcV5z1=s68-c-k-c0x00ffffff-no-rj"
       />
       <Videocard
         imgSrc="https://i.ytimg.com/vi/B_Nv8qw6aRQ/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBIfHa3S3bEUDcTsKr5FWoshsb_Sw"
@@ -111,7 +111,7 @@ const Videopage = () => {
         channel="OTZ Media"
         views="5k views"
         time="1 month ago"
-        avatar="https://yt3.ggpht.com/ytc/AMLnZu81e6WCua1SV85eK5paCQhwgyEpIRV6aUfZ_eco=s68-c-k-c0x00ffffff-no-rj"
+        avatar="https://yt3.ggpht.com/j5AbQt634TGo_fCEmSVUWcompQRbrbYqrnoUqV84KLQ3l0ZCWt4oCSuvgzrcyQiMgWjIQjGprnc=s68-c-k-c0x00ffffff-no-rj"
       />
       <Videocard
         imgSrc="https://i.ytimg.com/vi/btHF84xXIDQ/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBbpRd0Fl4nAXt2nL2EUa4zLYtjUw"
@@ -127,7 +127,7 @@ const Videopage = () => {
         channel="Star Media"
         views="10k views"
         time="6 months ago"
-        avatar="https://yt3.ggpht.com/ytc/AMLnZu81e6WCua1SV85eK5paCQhwgyEpIRV6aUfZ_eco=s68-c-k-c0x00ffffff-no-rj"
+        avatar="https://yt3.ggpht.com/j5AbQt634TGo_fCEmSVUWcompQRbrbYqrnoUqV84KLQ3l0ZCWt4oCSuvgzrcyQiMgWjIQjGprnc=s68-c-k-c0x00ffffff-no-rj"
       />
       <Videocard
         imgSrc="https://i.ytimg.com/vi/phWxA89Dy94/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLBFRFEMRwCj9-LW-Z8tnuDvdLF00g"
@@ -135,7 +135,7 @@ const Videopage = () => {
         channel="Star Media"
         views="10k views"
         time="6 months ago"
-        avatar="https://yt3.ggpht.com/ytc/AMLnZu9zMTPmIaEiOs-B40F1uSXGQvYzWSIAyLFDh7O46w=s68-c-k-c0x00ffffff-no-rj"
+        avatar="https://yt3.ggpht.com/ytc/AL5GRJXi2jT3Xqz7k5eT73gYxh989BJV5AabJ0rcV5z1=s68-c-k-c0x00ffffff-no-rj"
       />
       <Videocard
         imgSrc="https://i.ytimg.com/vi/2mDEfbBb48k/hq720.jpg?sqp=-oaymwE2COgCEMoBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhGIFYoZTAP&rs=AOn4CLBo4AsqtQ9UogUqofhhCNQhPjG89w"
@@ -143,7 +143,7 @@ const Videopage = () => {
         channel="Star Media"
         views="10k views"
         time="6 months ago"
-        avatar="https://yt3.ggpht.com/ytc/AMLnZu81e6WCua1SV85eK5paCQhwgyEpIRV6aUfZ_eco=s68-c-k-c0x00ffffff-no-rj"
+        avatar="https://yt3.ggpht.com/j5AbQt634TGo_fCEmSVUWcompQRbrbYqrnoUqV84KLQ3l0ZCWt4oCSuvgzrcyQiMgWjIQjGprnc=s68-c-k-c0x00ffffff-no-rj"
       />
       <Videocard
         imgSrc="https://i.ytimg.com/vi/phWxA89Dy94/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLBFRFEMRwCj9-LW-Z8tnuDvdLF00g"
@@ -151,7 +151,7 @@ const Videopage = () => {
         channel="Star Media"
         views="10k views"
         time="6 months ago"
-        avatar="https://yt3.ggpht.com/ytc/AMLnZu9zMTPmIaEiOs-B40F1uSXGQvYzWSIAyLFDh7O46w=s68-c-k-c0x00ffffff-no-rj"
+        avatar="https://yt3.ggpht.com/ytc/AL5GRJXi2jT3Xqz7k5eT73gYxh989BJV5AabJ0rcV5z1=s68-c-k-c0x00ffffff-no-rj"
       />
     </div>
   );

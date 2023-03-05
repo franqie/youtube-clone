@@ -1,7 +1,13 @@
 import React, { useState } from 'react';
 import { HiOutlineUser } from 'react-icons/hi2';
-import Comment from './Comment';
-import RelatedVideos from './RelatedVideos';
+import Comment from '../components/Comment';
+import RelatedVideos from '../components/RelatedVideos';
+import LikeIcon from '../images/LikeIcon';
+import DislikeIcon from '../images/DislikeIcon';
+import ShareIcon from '../images/ShareIcon';
+import CutIcon from '../images/CutIcon';
+import SaveIcon from '../images/SaveIcon';
+import SortIcon from '../images/SortIcon';
 
 const SingleVideoPage = () => {
   const [showless, setShowless] = useState(true);
@@ -33,23 +39,23 @@ const SingleVideoPage = () => {
               <div className="action__right">
                 <div className="span thumb">
                   <button type="button" className="like">
-                    <span className="material-symbols-outlined">thumb_up</span>
+                    <LikeIcon />
                     <span className="like__count">107K</span>
                   </button>
                   <button type="button" className="dislike">
-                    <span className="material-symbols-outlined">thumb_down</span>
+                    <DislikeIcon />
                   </button>
                 </div>
                 <button type="button" className="span">
-                  <span className="material-symbols-outlined">share</span>
+                  <ShareIcon />
                   <span className="">share</span>
                 </button>
                 <button type="button" className="span">
-                  <span className="material-symbols-outlined">cut</span>
+                  <CutIcon />
                   <span className="">clip</span>
                 </button>
                 <button type="button" className="span">
-                  <span className="material-symbols-outlined">playlist_add</span>
+                  <SaveIcon />
                   <span className="">save</span>
                 </button>
                 <button type="button" className="span more">
@@ -100,7 +106,7 @@ const SingleVideoPage = () => {
           <div className="comments__header">
             <span className="comments__count">2,617 Comments</span>
             <span className="sort">
-              <span className="material-symbols-outlined">sort</span>
+              <SortIcon />
               <span className="">Sort by</span>
             </span>
           </div>

@@ -1,12 +1,23 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
+// import home from '../images/home.svg';
 
-const SidebarIcon = ({ url, icon, title }) => (
-  <NavLink to={url} className="appdrawer-link">
-    {icon}
-    <span className="drawer-text">{title}</span>
-  </NavLink>
-);
+const SidebarIcon = ({
+  url,
+  icon,
+  activeIcon,
+  title,
+}) => {
+  const { pathname } = useLocation();
+  const match = pathname === url;
+
+  return (
+    <NavLink to={url} className="appdrawer-link">
+      { match ? activeIcon : icon}
+      <span className="drawer-text">{title}</span>
+    </NavLink>
+  );
+};
 
 export default SidebarIcon;

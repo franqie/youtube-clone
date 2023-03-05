@@ -4,8 +4,20 @@
     min-width: $drawer-width;
     max-height: 92vh;
     overflow-y: auto;
+    scrollbar-width: none;
     @include scrollbar-style;
-    
+
+    &::-webkit-scrollbar-thumb {
+        background: transparent;
+    }
+
+    &:hover {
+        scrollbar-width: thin;
+        &::-webkit-scrollbar-thumb {
+            background: #888;
+        }
+    }
+
     .appdrawer-wrapper {
         padding: 5px 15px;
     }
@@ -57,7 +69,7 @@
         margin-right: 8px;
         font-weight: 500;
         line-height: 1.8rem;
-        color: #606060;
+        color: black;
         display: inline-block;
         line-height: 10px;
     }

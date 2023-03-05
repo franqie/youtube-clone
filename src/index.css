@@ -10,6 +10,21 @@ body {
     Roboto,
     Arial,
     sans-serif;
+}
 
-  /* overflow: hidden; */
+.content {
+  background: #fff;
+  margin-top: 56px;
+  margin-left: 72px;
+}
+
+.content.shrink {
+  margin-left: 240px;
+}
+
+@media (max-width: 791px) {
+  .content {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

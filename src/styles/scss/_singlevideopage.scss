@@ -2,6 +2,8 @@
     width: 100%;
     max-width: 100%;
     background-color: #fff;
+    margin-top: $nav-height;
+
     .material-symbols-outlined {
         font-variation-settings:
         'FILL' 0,
@@ -320,10 +322,10 @@
              }
 
              .sort {
-                span:first-child {
-                    margin-right: 0.5rem;
-                }
-                span:last-child {
+                // span:first-child {
+                    // }
+                    span:last-child {
+                        margin-left: 1rem;
                     font-weight: 600;
                 }
              }
@@ -364,9 +366,27 @@
             padding: 0;
             
             iframe {
-                height: 30vh;
+                height: 37vh;
+            }
+
+            h1 {
+                line-height: 2rem;
             }
         }
+
+    @include xsm-screen {
+        .singlevideo {
+            padding: 0;
+
+            iframe {
+                height: 30vh;
+            }
+
+            h1 {
+                line-height: 1.5rem;
+            }
+        }
+    } 
     } 
     @include lg-screen {
         .videopage__inner {

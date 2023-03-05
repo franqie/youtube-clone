@@ -23,6 +23,7 @@
         @include flex;
         justify-content: flex-start;
         background-color: #fff;
+        margin-left: -5px;
     
         .bars {
             position: relative;
@@ -46,6 +47,7 @@
         .logo {
           cursor: pointer;
           text-decoration: none;
+          // transform: translateX(-2px);
     
           @include flex;
         }

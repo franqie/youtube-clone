@@ -1,5 +1,8 @@
 import React from 'react';
 import { HiOutlineUser } from 'react-icons/hi2';
+import DislikeIcon from '../images/DislikeIcon';
+import LikeIcon from '../images/LikeIcon';
+// import MenuVIcon from '../images/MenuVIcon';
 // import { FiThumbsDown, FiThumbsUp } from 'react-icons/fi';
 
 const Comment = () => (
@@ -16,12 +19,12 @@ const Comment = () => (
       <div className="msg__btn">
         <span className="like">
           <button className="thumb" type="button">
-            <span className="material-symbols-outlined">thumb_up</span>
+            <LikeIcon />
           </button>
           <span className="like__count">12K</span>
         </span>
         <button className="thumb down" type="button">
-          <span className="material-symbols-outlined">thumb_down</span>
+          <DislikeIcon />
         </button>
         <button className="reply" type="button">Reply</button>
       </div>
@@ -32,6 +35,7 @@ const Comment = () => (
     </div>
     <button type="button" className="btn">
       <span className="material-symbols-outlined">more_vert</span>
+      {/* <MenuVIcon /> */}
     </button>
   </div>
 );

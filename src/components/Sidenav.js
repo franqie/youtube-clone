@@ -1,18 +1,23 @@
+import { useLocation } from 'react-router-dom';
 import { useGlobalContext } from '../context';
 import useWindowSize from '../utils/useWindowSize';
-import Mainpage from './Mainpage';
 import Sidebar from './Sidebar';
 import MiniSidebar from './MiniSidebar';
 
-const Content = () => {
+const Sidenav = () => {
   const { showTray } = useGlobalContext();
   const windowWidth = useWindowSize();
+  const { pathname } = useLocation();
+
+  if (pathname === '/watch') {
+    return null;
+  }
+
   return (
-    <div className="content">
+    <div className="sidenav">
       {showTray && (windowWidth > 1300) ? <Sidebar /> : <MiniSidebar />}
-      <Mainpage />
     </div>
   );
 };
 
-export default Content;
+export default Sidenav;

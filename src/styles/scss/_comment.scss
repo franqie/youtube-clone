@@ -54,7 +54,7 @@
                 .like__count {
                     color: $light-text;
                     font-size: 0.8rem;
-                    transform: translateY(-0.2rem);
+                    transform: translateX(-0.2rem);
                 }
             }
 
@@ -123,12 +123,18 @@
     .btn {
         width: 40px;
         height: 40px;
+        border-radius: 50%;
         align-self: flex-start;
         background-color: transparent;
         border: 0;
         font-size: 1rem;
         display: none;
         transition: all ease 0.2s;
+        
+        &:active {
+            background: $lighter-bg;
+            border: 1px solid $light-bg;
+        }
     }
 
     &:hover .btn {

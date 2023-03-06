@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,200&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+
+html {
+  scrollbar-width: thin;
+  scrollbar-gutter: stable both-edges;
+}
+
+* {
+  font-family: Roboto, Arial, sans-serif;
+}
+
+body {
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+  }
+
+  scrollbar-width: thin;
+  scrollbar-gutter: stable both-edges;
+}
+
+.app {
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  font-size: 100%;
+  background: #fff;
+}
+
+.style-scope.yt-icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  pointer-events: none;
+}
+
+@import "_variables";
+@import "_mixins";
+@import "_navbar";
+@import "_sidenav";
+@import "_minisidebar";
+@import "_sidebar";
+@import "_sidemenu";
+@import "_mainpage";
+@import "_slidingheader";
+@import "_videopage";
+@import "_videocard";
+@import "_popoutcard";
+@import "_submenu";
+@import "_singlevideopage";
+@import "_comment";
+@import "_flexedvideocard";
+@import "_shorts";

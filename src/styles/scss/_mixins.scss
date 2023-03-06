@@ -1,0 +1,57 @@
+@mixin scrollbar-style {
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+  }
+}
+
+@mixin flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin icon-style ($val: 40px) {
+  width: $val;
+  min-width: $val;
+  height: $val;
+  border-radius: 50%;
+
+  @include flex;
+
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+}
+
+@mixin xsm-screen {
+  @media (max-width: 429px) {
+    @content;
+  }
+}
+
+@mixin sm-screen {
+  @media (max-width: 657px) {
+    @content;
+  }
+}
+
+@mixin lg-screen {
+  @media (max-width: 1012px) {
+    @content;
+  }
+}
+
+@mixin screen($val: 791px) {
+  @media (max-width: $val) {
+    @content;
+  }
+}

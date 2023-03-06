@@ -1,141 +1,146 @@
 .main-page {
-    // flex: 1 1 auto;
-    // margin-top: $nav-height;
-    // // margin-left: auto;
-    // margin-left: $mini-drawer-width;
+  // flex: 1 1 auto;
+  // margin-top: $nav-height;
+  // // margin-left: auto;
+  // margin-left: $mini-drawer-width;
 
-    .chip-bar-wrapper {
-        position: fixed;
-        top: $nav-height;
-        display: flex;
-        height: $nav-height;
-        width: auto;
-        // min-width: 100%;
-        background: #fff;
-        z-index: 3;
+  .chip-bar-wrapper {
+    position: fixed;
+    top: $nav-height;
+    display: flex;
+    height: $nav-height;
+    width: auto;
+    // min-width: 100%;
+    background: #fff;
+    z-index: 3;
+  }
+
+  .button-container {
+    position: absolute;
+    height: 56px;
+
+    @include flex;
+
+    justify-content: center;
+    background-color: transparent;
+    // visibility: hidden;
+
+    .button-box {
+      width: 56px;
+      height: 56px;
+      background-color: #fff;
+
+      @include flex;
+
+      justify-content: center;
     }
 
+    button {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #fff;
 
-    .button-container {
-        position: absolute;
-        height: 56px;
-        @include flex;
-        justify-content: center; 
-        background-color: transparent;
-        // visibility: hidden;
+      @include flex;
 
-        .button-box {
-            width: 56px;
-            height: 56px;
-            background-color: #fff;
-            @include flex;
-            justify-content: center;
-        }
+      justify-content: center;
+      border: none;
 
-        button {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background-color: #fff;
-            @include flex;
-            justify-content: center;
-            border: none;
+      &:hover {
+        background-color: $hover;
+      }
+    }
+  }
 
-            &:hover {
-                background-color: $hover;
-            }
-        }
+  .button-container.right {
+    right: 0;
+
+    &::before {
+      content: "";
+      width: 50px;
+      height: 100%;
+      background: linear-gradient(to left, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 0) 80%);
+    }
+  }
+
+  .button-container.left::after {
+    content: "";
+    width: 50px;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 0) 80%);
+  }
+
+  .button-container.hide {
+    display: none;
+  }
+
+  .chip-bar {
+    width: 100%;
+    height: 100%;
+
+    @include flex;
+
+    flex-grow: 1;
+    overflow: scroll;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
     }
 
-    .button-container.right {
-        right: 0;
+    .bar,
+    .compass {
+      display: block;
+      padding: 5px 10px;
+      border-radius: 8px;
+      margin: 0 8px;
+      color: #0f0f0f;
+      text-decoration: none;
+      background-color: $lighter-bg;
+      font-weight: 400;
+      cursor: pointer;
 
-        &::before {
-            content: "";
-            width: 50px;
-            height: 100%;
-            background: linear-gradient(to left, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 0) 80%);
-        }
+      &:hover {
+        background-color: $light-bg;
+      }
     }
 
-    .button-container.left::after {
-        content: "";
-        width: 50px;
-        height: 100%;
-        background: linear-gradient(to right, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 0) 80%);
+    .bar.selected {
+      color: #fff;
+      background-color: #606060;
     }
 
-    .button-container.hide {
-        display: none;
+    .explore {
+      display: none;
+      border-right: 2px solid $light-bg;
+      padding-right: 8px;
+      margin-right: 8px;
     }
 
-
-    
-
-    .chip-bar {
-        width: 100%;
-        height: 100%;
-        @include flex;
-        flex-grow: 1;
-        overflow: scroll;
-        white-space: nowrap;
-        scroll-behavior: smooth;
-        scrollbar-width: none;
-
-        &::-webkit-scrollbar {
-            display: none;
-        }
-
-        .bar, .compass {
-            display: block;
-            padding: 5px 10px;
-            border-radius: 8px;
-            margin: 0 8px;
-            color: #0f0f0f;
-            text-decoration: none;
-            background-color: $lighter-bg;
-            font-weight: 400;
-            cursor: pointer;
-
-            &:hover {
-                background-color: $light-bg;
-            }
-        }
-
-        .bar.selected {
-            color: #fff;
-            background-color: #606060;
-        }
-
-        .explore {
-            display: none;
-            border-right: 2px solid $light-bg;
-            padding-right: 8px;
-            margin-right: 8px;
-        }
-
-        .explore > span {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .explore svg {
-            margin-right: 5px;
-        }
-
-        @include sm-screen {
-            .explore {
-                display: block;
-            }
-
-            // .button-container {
-            //     display: none !important;
-            // }
-        }
+    .explore > span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
-    .videos {
-        margin-top: 112px;
+    .explore svg {
+      margin-right: 5px;
     }
+
+    @include sm-screen {
+      .explore {
+        display: block;
+      }
+
+      // .button-container {
+      //     display: none !important;
+      // }
+    }
+  }
+
+  .videos {
+    margin-top: 112px;
+  }
 }

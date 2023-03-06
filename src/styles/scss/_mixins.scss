@@ -2,9 +2,11 @@
   &::-webkit-scrollbar {
     width: 8px;
   }
+
   &::-webkit-scrollbar-track {
     background: transparent;
   }
+
   &::-webkit-scrollbar-thumb {
     background: #888;
     border-radius: 5px;
@@ -29,7 +31,6 @@
   cursor: pointer;
   border: none;
 }
-
 
 @mixin xsm-screen {
   @media (max-width: 429px) {

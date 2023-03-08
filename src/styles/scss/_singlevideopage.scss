@@ -372,33 +372,58 @@
       }
     }
   }
-
-  @include sm-screen {
+  
+  @include xsm-screen {
+    .videopage__inner {
+      padding: 20px 2px;
+    }
+    
     .singlevideo {
       padding: 0;
 
       iframe {
+        height: 30vh;
+      }
+
+      h1 {
+        line-height: 1.5rem;
+      }
+    }
+
+    .comments__container {
+      padding: 0;
+    }
+
+    .related {
+      margin-top: 10px;
+    }
+  }
+
+  @include sm-screen {
+    .videopage__inner {
+      padding: 20px 2px;
+    }
+
+    .singlevideo {
+      padding: 0 !important;
+
+      iframe {
+        // width: 37vh;
         height: 37vh;
       }
 
       h1 {
         line-height: 2rem;
       }
-    }
 
-    @include xsm-screen {
-      .singlevideo {
-        padding: 0;
-
-        iframe {
-          height: 30vh;
-        }
-
-        h1 {
-          line-height: 1.5rem;
+      .action__right {
+        button.clip,
+        button.save {
+          display: none !important;
         }
       }
     }
+
   }
 
   @include lg-screen {

@@ -39,7 +39,7 @@ const Navbar = () => {
           <button type="button" aria-label="menu button" onClick={handleClick} className="bars effect"><BarsIcon className="icon hi-bars" /></button>
           <Link to="/" className="logo">
             <img src="https://www.freeiconspng.com/thumbs/youtube-logo-png/youtube-logo-png-transparent-image-5.png" alt="logo" className="logo-img" />
-            <span className="logo-text">NG-</span>
+            <span className="logo-text">NG</span>
             <span className="clone">Clone</span>
           </Link>
         </div>

@@ -50,11 +50,11 @@ const SingleVideoPage = () => {
                   <ShareIcon />
                   <span className="">share</span>
                 </button>
-                <button type="button" className="span">
+                <button type="button" className="span clip">
                   <CutIcon />
                   <span className="">clip</span>
                 </button>
-                <button type="button" className="span">
+                <button type="button" className="span save">
                   <SaveIcon />
                   <span className="">save</span>
                 </button>

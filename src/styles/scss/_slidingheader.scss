@@ -1,0 +1,107 @@
+.slidingheader {
+  width: 100%;
+  max-width: 100%;
+
+  .chip-bar-wrapper {
+    position: relative;
+    display: flex;
+    height: $nav-height;
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .button-container {
+    position: absolute;
+    height: 56px;
+
+    @include flex;
+
+    justify-content: center;
+    background-color: transparent;
+    // visibility: hidden;
+
+    .button-box {
+      width: 56px;
+      height: 56px;
+      background-color: #fff;
+
+      @include flex;
+
+      justify-content: center;
+    }
+
+    button {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #fff;
+
+      @include flex;
+
+      justify-content: center;
+      border: none;
+
+      &:hover {
+        background-color: $hover;
+      }
+    }
+  }
+
+  .button-container.right {
+    right: 0;
+
+    &::before {
+      content: "";
+      width: 50px;
+      height: 100%;
+      background: linear-gradient(to left, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 0) 80%);
+    }
+  }
+
+  .button-container.left::after {
+    content: "";
+    width: 50px;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 0) 80%);
+  }
+
+  .button-container.hide {
+    display: none;
+  }
+
+  .chip-bar {
+    width: 1000px;
+    height: 100%;
+
+    @include flex;
+
+    flex-grow: 1;
+    overflow: scroll;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .bar {
+      display: block;
+      padding: 5px 10px;
+      border-radius: 8px;
+      margin: 0 10px;
+      color: #0f0f0f;
+      text-decoration: none;
+      background-color: $lighter-bg;
+      font-weight: 400;
+
+      &:hover {
+        background-color: $light-bg;
+      }
+    }
+
+    .bar.selected {
+      color: #fff;
+      background-color: #000;
+    }
+  }
+}

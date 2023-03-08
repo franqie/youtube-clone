@@ -1,0 +1,83 @@
+.appdrawer {
+  background-color: #fff;
+  width: $drawer-width;
+  min-width: $drawer-width;
+  max-height: 92vh;
+  overflow-y: auto;
+  scrollbar-width: none;
+
+  @include scrollbar-style;
+
+  &::-webkit-scrollbar-thumb {
+    background: transparent;
+  }
+
+  &:hover {
+    scrollbar-width: thin;
+
+    &::-webkit-scrollbar-thumb {
+      background: #888;
+    }
+  }
+
+  .appdrawer-wrapper {
+    padding: 5px 15px;
+  }
+
+  .appdrawer-tray {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+
+    .title {
+      padding-left: 10px;
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+
+    .red {
+      color: #f00;
+    }
+
+    p {
+      margin: 0;
+      padding: 16px 24px 0;
+    }
+  }
+
+  .appdrawer-link {
+    @include flex;
+
+    justify-content: flex-start;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $lighter-bg;
+    }
+  }
+
+  svg {
+    font-size: 24px;
+    margin-right: 25px;
+  }
+
+  .drawer-text {
+    font-size: 14px;
+  }
+
+  a {
+    text-decoration: none;
+    font-size: 13px;
+    margin-right: 8px;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: black;
+    display: inline-block;
+    line-height: 10px;
+  }
+
+  .footer {
+    border: none;
+  }
+}

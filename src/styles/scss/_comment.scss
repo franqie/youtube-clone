@@ -1,0 +1,163 @@
+.comment {
+  @include flex;
+
+  justify-content: flex-start;
+  padding: 0.3rem 0 1.3rem;
+  margin: 1rem 0;
+  // margin-bottom: 5rem; *** Margin not working
+  border-bottom: 1px solid #fff;
+
+  .avatar {
+    align-self: flex-start;
+    background-color: $orange;
+
+    @include icon_style(40px);
+
+    margin-right: 1rem;
+    color: #f1f1f1;
+    font-size: 1.2rem;
+  }
+
+  .message {
+    flex-grow: 1;
+    color: $text-color;
+
+    .header {
+      line-height: 1.5rem;
+      font-size: 0.9rem;
+
+      .username {
+        margin-right: 5px;
+        font-weight: 600;
+      }
+
+      .message__time {
+        word-spacing: -2px;
+        color: $light-text;
+      }
+    }
+
+    p {
+      line-height: 2rem;
+    }
+
+    .msg__btn {
+      margin-top: 4px;
+
+      @include flex;
+
+      justify-content: flex-start;
+
+      .like {
+        @include flex;
+
+        justify-content: flex-start;
+        margin-right: 10px;
+
+        button {
+          margin-right: 4px;
+        }
+
+        .like__count {
+          color: $light-text;
+          font-size: 0.8rem;
+          transform: translateX(-0.2rem);
+        }
+      }
+
+      .thumb.down {
+        margin-right: 15px;
+      }
+
+      .reply {
+        transform: translateY(-0.2rem);
+
+        @include flex;
+
+        font-weight: 600;
+        height: 32px;
+        line-height: 32px;
+        font-size: 12px;
+        padding: 0 12px;
+        border: 0;
+        border-radius: 16px;
+        background: transparent;
+      }
+
+      .reply:hover {
+        background: $light-bg;
+      }
+
+      .thumb {
+        @include flex;
+
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        background-color: transparent;
+        border: 0;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+
+      .thumb:hover {
+        background: $light-bg;
+      }
+    }
+
+    .reply__btn {
+      @include flex;
+
+      justify-content: center;
+      border: 0;
+      font-weight: 600;
+      color: $call;
+      height: 36px;
+      padding: 0 12px;
+      line-height: 36px;
+      border-radius: 18px;
+      background: transparent;
+      font-size: 14px;
+      font-weight: 600;
+      font-family: "Roboto", "Arial", sans-serif;
+
+      span:first-child {
+        transform: translateX(-4px);
+      }
+
+      &:hover {
+        background: $action;
+      }
+    }
+  }
+
+  .btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    align-self: flex-start;
+    background-color: transparent;
+    border: 0;
+    font-size: 1rem;
+    visibility: hidden;
+    transition: all ease 0.2s;
+
+    &:active {
+      background: $lighter-bg;
+      border: 1px solid $light-bg;
+    }
+  }
+
+  &:hover .btn {
+    visibility: visible;
+  }
+
+  @include sm-screen {
+    .message {
+      p {
+        margin: 5px 0;
+        line-height: 1.5rem;
+      }
+    }
+  }
+}
